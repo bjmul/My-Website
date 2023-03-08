@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script src="./script.js" defer></script>
+    <title>Bas Jan Mulder</title>
+</head>
+<body>
+        <div id="nav" class="bottom-nav">
+                <a href="#home"><div class="nav-link">
+                        <img class="nav-logo" src="images/whitelogo.png"><h1>Home</h1>
+                </div></a>
+                <a href="#bio"><div class="nav-link">
+                        <i class="fa-solid fa-person"></i><h1>Bio</h1></div>
+                </a>
+                <a href="#works"><div class="nav-link">
+                        <i class="fa-solid fa-laptop-code"></i><h1>Works</h1></div>
+                </a>             
+                <a href="#contact"><div class="nav-link">
+                        <i class="fa-solid fa-at"></i><h1>Contact</h1>
+                </div></a> 
+        </div>
+    <div id="container">
+        <section class="home-area" id="home">
+            <img src="./images/space.jpg" id="bg">
+            <img src="./images/blackmountains.png" id="mountains">
+            <img src="./images/whitelogo.png" id="home-logo">
+            <h2 id="home-text">Bas Jan Mulder</h2>
+        </section>
+        <section class="bio" id="bio">
+            <div class="box">
+                <div class="bio-columns">
+                    <h1>About me</h1>
+                    <div class="bio-top-column">
+                        <p>Hi there, my name is Bas Jan Mulder. I create websites like this one, and I like to play around with javascript code. I am a self-thought web developer, always eager to learn more about computers and coding. Creating websites is my hobby, but I want to make it my profession. I have developed several websites so far, which you can see in the 'Works' section below. In addition, I finished several javascript courses on Coursera and studied them on my own. 
+                            Next to coding, I enjoy playing tennis and video games and studying history.</p>
+                    </div>
+                    <div class="bio-bottom-column">
+                        <div class="langs">
+                            <span style="--i:1;"><img class="html" src="/images/html.png"></span>
+                            <span style="--i:2;"><img class="css" src="/images/css.png"></span>
+                            <span style="--i:3;"><img class="google" src="/images/es6logo.jpg"></span>
+                            <span style="--i:4;"><img class="js" src="/images/javascript.png"></span>
+                            <span style="--i:5;"><img class="jquery" src="/images/jquery.png"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="works" id="works">
+            <div class="box">
+                <h1>Projects</h1>
+                <div class="row2">
+                    <div class="websites-left-column">
+                        <div class="website-link"><a href="https://olamemory.netlify.app"><img src="/images/memorytip.png"><h2>Memory Game</h2></a></div>
+                        <div class="website-link"><a href="https://bjmquotes.netlify.app"><img src="/images/quotestip.png"><h2>Random Quotes</h2></a></div>
+                        <div class="website-link"><a href="https://bjmtictactoe.netlify.app"><img src="/images/tictactoetip.png"><h2>Tic Tac Toe Game</h2></a></div>
+                        <div class="website-link"><a href="https://classicpong.netlify.app/"><img src="/images/pong.png"><h2>Pong Game</h2></a></div>
+                    </div>
+                    <div class="websites-right-column">
+                        <div class="website-link"><a href="https://olastodolist.netlify.app"><img src="/images/todolisttip.png"><h2>To Do List</h2></a></div>
+                        <div class="website-link"><a href="https://belleknop.netlify.app"><img src="/images/belleknoptip.png"><h2>Family House</h2></a></div>
+                        <div class="website-link"><a href="https://boterkaaseneieren.netlify.app"><img src="/images/boterkaaseiren.png"><h2>Rock Paper Scissors Game</h2></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="box">
+            <h1>Contact</h1>
+            <form action="https://formspree.io/f/xqkjkqke" method="POST" id="my-form">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                    <button type="submit">Send</button>
+              </form>
+            <div id="status"></div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
